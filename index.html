@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- my js -->
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+
+  <body class="ff-p text-p-900 bg-p-200">
+    <main class="vh-100 d-flex">
+      <!-- for accessibility reasons page must have one h1 at least  -->
+      <h1 class="visually-hidden">Age calculator</h1>
+      <div class="container d-flex m-auto">
+        <div class="m-auto px-3 px-sm-5 py-5 | calculator bg-p-100">
+          <div class="form-group row g-1 g-sm-4 | calculator__form">
+            <div class="col col-md-3">
+              <label class="form-label text-uppercase | text-p-400" for="Day">Day <span
+                  class="visually-hidden">required</span></label>
+              <input class="form-control fs-2 py-2 ps-sm-3 ps-2 mb-1" id="Day" data-hint-id="day-hint" type="number"
+                placeholder="DD" required aria-required="true">
+              <p class="fst-italic fw-light | error-hint fs-error-message text-a-200" aria-hidden="true" id="day-hint">
+              </p>
+            </div>
+            <div class="col col-md-3">
+              <label class="form-label text-uppercase | text-p-400" for="Month">Month <span
+                  class="visually-hidden">required</span></label>
+              <input class="form-control fs-2 py-2 ps-sm-3 ps-2 mb-1" id="Month" data-hint-id="month-hint" type="number"
+                placeholder="MM" required aria-required="true">
+              <p class="fst-italic fw-light | error-hint fs-error-message text-a-200" aria-hidden="true"
+                id="month-hint"></p>
+            </div>
+            <div class="col col-md-3">
+              <label class="form-label text-uppercase | text-p-400" for="Year">Year <span
+                  class="visually-hidden">required</span></label>
+              <input class="form-control fs-2 py-2 ps-sm-3 ps-2 mb-1" id="Year" data-hint-id="year-hint" type="number"
+                placeholder="YYYY" required aria-required="true">
+              <p class="fst-italic fw-light | error-hint fs-error-message text-a-200" aria-hidden="true" id="year-hint">
+              </p>
+            </div>
+            <div class="col-12 mt-4 d-flex flex-column | calculator__button-container">
+              <hr class="m-0">
+              <button type="submit"
+                class="p-3 border-0 rounded-circle align-self-md-end align-self-center translate-middle-y | calculator__button bg-a-100"
+                id="submit-button">
+                <svg class="img-fluid | calculator__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 44">
+                  <g fill="none" stroke="white" stroke-width="2">
+                    <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="calculator__result mt-md-0 mt-5">
+            <h2 class="display-1 fw-800i lh-1">
+              <span class="text-a-100" id="years-span">--</span> years
+            </h2>
+            <h2 class="display-1 fw-800i lh-1"><span class="text-a-100" id="months-span">--</span> months</h2>
+            <h2 class="display-1 fw-800i lh-1"><span class="text-a-100" id="days-span">--</span> days</h2>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+
+
+  <body class="ff-p text-p-900 bg-p-200">
+
+
+
+
+
+
+
+    <div class="calculator__result | mt-md-0 mt-5">
+      <div class="d-flex" style="width: max-content;">
+        <div class="counters-container | d-flex align-items-start overflow-hidden">
+          <ul class="list-unstyled m-0 d-flex flex-column | tens-counter" id="years-tens-counter">
+            <li class="fst-italic fw-800i text-a-100 text-end">0</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">1</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">2</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">3</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">4</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">5</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">6</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">7</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">8</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">9</li>
+          </ul>
+          <ul class="list-unstyled m-0 d-flex flex-column | ones-counter" style="height: 1000%;"
+            data-tens-counter-id="years-tens-counter" data-goal="26" data-step="0">
+            <li class="fst-italic fw-800i text-a-100 text-start">0</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">1</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">2</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">3</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">4</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">5</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">6</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">7</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">8</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">9</li>
+          </ul>
+        </div>
+        <span class="d-block align-self-baseline ms-1 fst-italic fw-800i">years</span>
+      </div>
+      <div class="d-flex" style="width: max-content;">
+        <div class="counters-container | d-flex align-items-start overflow-hidden">
+          <ul class="list-unstyled m-0 d-flex flex-column | tens-counter" id="months-tens-counter">
+            <li class="fst-italic fw-800i text-a-100 text-end">0</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">1</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">2</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">3</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">4</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">5</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">6</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">7</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">8</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">9</li>
+          </ul>
+          <ul class="list-unstyled m-0 d-flex flex-column | ones-counter" style="height: 1000%;"
+            data-tens-counter-id="months-tens-counter" data-goal="12" data-step="0">
+            <li class="fst-italic fw-800i text-a-100 text-start">0</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">1</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">2</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">3</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">4</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">5</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">6</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">7</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">8</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">9</li>
+          </ul>
+        </div>
+        <span class="d-block align-self-baseline ms-1 fst-italic fw-800i">months</span>
+      </div>
+      <div class="d-flex" style="width: max-content;">
+        <div class="counters-container | d-flex align-items-start overflow-hidden">
+          <ul class="list-unstyled m-0 d-flex flex-column | tens-counter" id="days-tens-counter">
+            <li class="fst-italic fw-800i text-a-100 text-end">0</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">1</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">2</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">3</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">4</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">5</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">6</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">7</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">8</li>
+            <li class="fst-italic fw-800i text-a-100 text-end">9</li>
+          </ul>
+          <ul class="list-unstyled m-0 d-flex flex-column | ones-counter" style="height: 1000%;"
+            data-tens-counter-id="days-tens-counter" data-goal="31" data-step="0">
+            <li class="fst-italic fw-800i text-a-100 text-start">0</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">1</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">2</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">3</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">4</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">5</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">6</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">7</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">8</li>
+            <li class="fst-italic fw-800i text-a-100 text-start">9</li>
+          </ul>
+        </div>
+        <span class="d-block align-self-baseline ms-1 fst-italic fw-800i">days</span>
+      </div>
+    </div>
+    <style>
+      :root {
+        --line-height: 1;
+        --fs: clamp(2.29375rem, 1.5205rem + 3.8661vw, 5rem);
+        --height: calc((var(--fs)*var(--line-height)))
+      }
+
+      .counters-container {
+        height: var(--height);
+      }
+
+      li,
+      span {
+        font-size: var(--fs);
+        line-height: 1;
+      }
+
+      .ones-counter {
+        animation: countUp 150ms cubic-bezier(0.87, 0, 0.13, 1) infinite;
+      }
+
+      .tens-counter-animate {
+        animation: countUp 150ms linear;
+      }
+
+      .paused {
+        animation-play-state: paused;
+      }
+
+      @keyframes countUp {
+        0% {
+          transform: translateY(0%);
+
+        }
+
+        100% {
+          transform: translateY(calc(-1*var(--height)));
+        }
+      }
+    </style>
+
+    <script>
+      const ONES_COUNTER = document.querySelectorAll(".ones-counter");
+      const TENS_COUNTER = document.querySelectorAll(".tens-counter");
+      ONES_COUNTER.forEach((counter) => {
+        counter.addEventListener("animationiteration", () => {
+          let step = Number(counter.getAttribute("data-step"));
+          let goal = Number(counter.getAttribute("data-goal"));
+          step++
+          counter.setAttribute("data-step", step)
+          if (step === goal) {
+            counter.classList.add("paused")
+          }
+          counter.appendChild(counter.firstElementChild)
+          if (counter.firstElementChild.innerHTML === "0") {
+            let tensCounter = document.getElementById(counter.getAttribute("data-tens-counter-id"))
+            tensCounter.classList.add("tens-counter-animate")
+          }
+        })
+      })
+      TENS_COUNTER.forEach((counter) => {
+        counter.addEventListener("animationend", () => {
+          counter.appendChild(counter.firstElementChild)
+          counter.classList.remove("tens-counter-animate")
+        })
+      })
+
+
+    </script>
+  </body>
+
+</html>
