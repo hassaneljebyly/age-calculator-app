@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://www.frontendmentor.io/solutions/news-homepage-with-bootstrap-and-some-custom-css-01IjkIWw8y)
+- [Solution](https://www.frontendmentor.io/solutions/age-calculator-bootstrap-css-animejs-custom-input-validation-3C9EFib9nX)
 - [Live Site](https://hassaneljebyly.github.io/age-calculator-app)
 
 ## My process
